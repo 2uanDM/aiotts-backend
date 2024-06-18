@@ -1,0 +1,14 @@
+[
+    {
+        "old": "./AutoPTS.exe",
+        "new": "./main.exe"
+    },
+    {
+        "old": "./assets",
+        "new": "./assets"
+    },
+    {
+        "old": "./data",
+        "new": "./data"
+    }
+]
