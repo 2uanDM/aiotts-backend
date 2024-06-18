@@ -9571,3 +9571,443 @@ requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.flashship.net'
 2024-06-18 11:21:05,633 - uvicorn.error - INFO - Started server process [26728]
 2024-06-18 11:21:05,633 - uvicorn.error - INFO - Waiting for application startup.
 2024-06-18 11:21:05,634 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:22:30,298 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:22:30,405 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:22:30,405 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:22:30,405 - uvicorn.error - INFO - Finished server process [26728]
+2024-06-18 11:22:31,309 - uvicorn.error - INFO - Started server process [30280]
+2024-06-18 11:22:31,310 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:22:31,310 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:22:43,973 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:22:44,083 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:22:44,083 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:22:44,083 - uvicorn.error - INFO - Finished server process [30280]
+2024-06-18 11:22:44,914 - uvicorn.error - INFO - Started server process [21612]
+2024-06-18 11:22:44,914 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:22:44,914 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:22:44,932 - uvicorn.error - ERROR - Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 741, in lifespan
+    await receive()
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+2024-06-18 11:22:45,772 - uvicorn.error - INFO - Started server process [19708]
+2024-06-18 11:22:45,772 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:22:45,773 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:22:47,531 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:22:47,640 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:22:47,641 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:22:47,641 - uvicorn.error - INFO - Finished server process [19708]
+2024-06-18 11:22:48,435 - uvicorn.error - INFO - Started server process [380]
+2024-06-18 11:22:48,435 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:22:48,435 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 12:42:17,561 - uvicorn.error - INFO - Shutting down
+2024-06-18 12:42:17,670 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 12:42:17,670 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 12:42:17,670 - uvicorn.error - INFO - Finished server process [380]
+2024-06-18 12:49:58,658 - uvicorn.error - INFO - Started server process [18500]
+2024-06-18 12:49:58,658 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 12:49:58,659 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 12:49:58,684 - uvicorn.error - ERROR - Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 741, in lifespan
+    await receive()
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+2024-06-18 12:49:59,507 - uvicorn.error - INFO - Started server process [10512]
+2024-06-18 12:49:59,508 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 12:49:59,508 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 12:50:11,919 - uvicorn.error - INFO - Shutting down
+2024-06-18 12:50:12,027 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 12:50:12,027 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 12:50:12,027 - uvicorn.error - INFO - Finished server process [10512]
+2024-06-18 12:50:12,893 - uvicorn.error - INFO - Started server process [35836]
+2024-06-18 12:50:12,894 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 12:50:12,894 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 12:50:22,819 - uvicorn.error - INFO - Shutting down
+2024-06-18 12:50:22,929 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 12:50:22,929 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 12:50:22,929 - uvicorn.error - INFO - Finished server process [35836]
+2024-06-18 12:50:28,130 - uvicorn.error - INFO - Started server process [35764]
+2024-06-18 12:50:28,130 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 12:50:28,131 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 12:50:30,115 - uvicorn.error - INFO - Shutting down
+2024-06-18 12:50:30,223 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 12:50:30,223 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 12:50:30,223 - uvicorn.error - INFO - Finished server process [35764]
+2024-06-18 12:50:31,056 - uvicorn.error - INFO - Started server process [36744]
+2024-06-18 12:50:31,056 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 12:50:31,056 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 12:50:31,619 - uvicorn.error - INFO - Shutting down
+2024-06-18 12:50:31,727 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 12:50:31,727 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 12:50:31,727 - uvicorn.error - INFO - Finished server process [36744]
+2024-06-18 12:50:32,621 - uvicorn.error - INFO - Started server process [33972]
+2024-06-18 12:50:32,621 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 12:50:32,621 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 12:51:35,684 - uvicorn.error - INFO - Shutting down
+2024-06-18 12:51:35,793 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 12:51:35,793 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 12:51:35,793 - uvicorn.error - INFO - Finished server process [33972]
+2024-06-18 12:51:36,663 - uvicorn.error - INFO - Started server process [30248]
+2024-06-18 12:51:36,663 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 12:51:36,663 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 12:51:51,381 - uvicorn.error - INFO - Shutting down
+2024-06-18 12:51:51,489 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 12:51:51,489 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 12:51:51,489 - uvicorn.error - INFO - Finished server process [30248]
+2024-06-18 12:51:52,336 - uvicorn.error - INFO - Started server process [23912]
+2024-06-18 12:51:52,336 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 12:51:52,336 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 12:51:52,355 - uvicorn.error - ERROR - Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 741, in lifespan
+    await receive()
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+2024-06-18 12:51:53,139 - uvicorn.error - INFO - Started server process [35848]
+2024-06-18 12:51:53,139 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 12:51:53,140 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 12:51:54,671 - uvicorn.error - INFO - Shutting down
+2024-06-18 12:51:54,780 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 12:51:54,780 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 12:51:54,781 - uvicorn.error - INFO - Finished server process [35848]
+2024-06-18 12:51:55,571 - uvicorn.error - INFO - Started server process [35804]
+2024-06-18 12:51:55,571 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 12:51:55,572 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 12:51:59,611 - uvicorn.error - INFO - Shutting down
+2024-06-18 12:51:59,721 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 12:51:59,721 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 12:51:59,721 - uvicorn.error - INFO - Finished server process [35804]
+2024-06-18 12:52:11,640 - uvicorn.error - INFO - Started server process [31888]
+2024-06-18 12:52:11,640 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 12:52:11,640 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 12:55:09,717 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 399, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 70, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\fastapi\routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\app\main.py", line 428, in create_order
+    api_key = body.api_key
+              ^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\pydantic\main.py", line 811, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'OrderItem' object has no attribute 'api_key'
+2024-06-18 12:56:07,038 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 399, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 70, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\fastapi\routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\app\main.py", line 428, in create_order
+    api_key = body.api_key
+              ^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\pydantic\main.py", line 811, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'OrderItem' object has no attribute 'api_key'
+2024-06-18 12:56:33,717 - uvicorn.error - INFO - Shutting down
+2024-06-18 12:56:33,826 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 12:56:33,826 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 12:56:33,826 - uvicorn.error - INFO - Finished server process [31888]
+2024-06-18 12:56:34,773 - uvicorn.error - INFO - Started server process [17976]
+2024-06-18 12:56:34,773 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 12:56:34,774 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 12:57:04,525 - uvicorn.error - INFO - Shutting down
+2024-06-18 12:57:04,633 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 12:57:04,633 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 12:57:04,633 - uvicorn.error - INFO - Finished server process [17976]
+2024-06-18 12:57:05,452 - uvicorn.error - INFO - Started server process [36812]
+2024-06-18 12:57:05,452 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 12:57:05,452 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 12:57:14,093 - uvicorn.error - INFO - Shutting down
+2024-06-18 12:57:14,203 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 12:57:14,203 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 12:57:14,203 - uvicorn.error - INFO - Finished server process [36812]
+2024-06-18 12:57:15,091 - uvicorn.error - INFO - Started server process [30116]
+2024-06-18 12:57:15,091 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 12:57:15,091 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 12:57:17,178 - uvicorn.error - INFO - Shutting down
+2024-06-18 12:57:17,289 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 12:57:17,289 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 12:57:17,289 - uvicorn.error - INFO - Finished server process [30116]
+2024-06-18 12:57:18,108 - uvicorn.error - INFO - Started server process [29264]
+2024-06-18 12:57:18,109 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 12:57:18,109 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 12:57:26,053 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 399, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 70, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\fastapi\routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\app\main.py", line 447, in create_order
+    headers=get_flashship_header(auth=True, access_token=body.access_token),
+                                                         ^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\pydantic\main.py", line 811, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'OrderItem' object has no attribute 'access_token'
+2024-06-18 12:58:06,804 - uvicorn.error - INFO - Shutting down
+2024-06-18 12:58:06,915 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 12:58:06,915 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 12:58:06,915 - uvicorn.error - INFO - Finished server process [29264]
+2024-06-18 12:58:07,735 - uvicorn.error - INFO - Started server process [30820]
+2024-06-18 12:58:07,735 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 12:58:07,735 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 12:58:10,435 - app.main - ERROR - Error while creating order:
+Traceback (most recent call last):
+  File "D:\GitHub\aiotts-backend\app\main.py", line 448, in create_order
+    headers=get_flashship_header(auth=True, access_token=body.access_token),
+                                                         ^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\pydantic\main.py", line 811, in __getattr__
+    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')
+AttributeError: 'OrderItem' object has no attribute 'access_token'
+2024-06-18 12:58:40,628 - uvicorn.error - INFO - Shutting down
+2024-06-18 12:58:40,737 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 12:58:40,737 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 12:58:40,737 - uvicorn.error - INFO - Finished server process [30820]
+2024-06-18 12:58:41,567 - uvicorn.error - INFO - Started server process [37492]
+2024-06-18 12:58:41,568 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 12:58:41,568 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 12:58:47,227 - uvicorn.error - INFO - Shutting down
+2024-06-18 12:58:47,335 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 12:58:47,335 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 12:58:47,335 - uvicorn.error - INFO - Finished server process [37492]
+2024-06-18 12:58:48,132 - uvicorn.error - INFO - Started server process [15060]
+2024-06-18 12:58:48,132 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 12:58:48,132 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 13:00:41,208 - uvicorn.error - INFO - Shutting down
+2024-06-18 13:00:41,317 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 13:00:41,317 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 13:00:41,317 - uvicorn.error - INFO - Finished server process [15060]
+2024-06-18 13:00:42,191 - uvicorn.error - INFO - Started server process [14472]
+2024-06-18 13:00:42,191 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 13:00:42,191 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 13:01:12,765 - uvicorn.error - INFO - Shutting down
+2024-06-18 13:01:12,874 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 13:01:12,874 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 13:01:12,874 - uvicorn.error - INFO - Finished server process [14472]
+2024-06-18 13:01:13,724 - uvicorn.error - INFO - Started server process [34476]
+2024-06-18 13:01:13,724 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 13:01:13,724 - uvicorn.error - INFO - Application startup complete.

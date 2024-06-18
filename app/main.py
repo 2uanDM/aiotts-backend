@@ -342,6 +342,7 @@ def get_flashship_header(auth: bool = False, access_token: str | None = None) ->
     return headers
 
 
+##### login #####
 class LoginBody(BaseModel):
     api_key: str
     username: str
@@ -366,17 +367,98 @@ def login(body: LoginBody, mode: str):
 
     print("==>> url:", url)
 
-    response = requests.post(
-        url=url,
-        json={"username": body.username, "password": body.password},
-        headers=get_flashship_header(),
-    )
+    try:
+        response = requests.post(
+            url=url,
+            json={"username": body.username, "password": body.password},
+            headers=get_flashship_header(),
+        )
+    except Exception as e:
+        logger.error("Error while logging in:", exc_info=True)
+        return JSONResponse(
+            content={"msg": "fail", "error": str(e)},
+            status_code=500,
+        )
 
     status_code = response.status_code
     print(f"==>> login status_code: {status_code}")
 
     if response.json().get("msg") == "fail":
         status_code = 401
+
+    return JSONResponse(
+        content=response.json(),
+        status_code=status_code,
+    )
+
+
+##### Create orders #####
+class OrderBody(BaseModel):
+    variant_id: int
+    printer_design_front_url: str
+    printer_design_back_url: str | None
+    printer_design_right_url: str | None
+    printer_design_left_url: str | None
+    printer_design_neck_url: str | None
+    mockup_front_url: None
+    mockup_back_url: None
+    mockup_right_url: None
+    mockup_left_url: None
+    mockup_neck_url: None
+    quantity: int
+    note: str
+
+
+class OrderItem(BaseModel):
+    access_token: str
+    api_key: str
+    order_id: str
+    buyer_first_name: str
+    buyer_last_name: str
+    buyer_email: str
+    buyer_phone: str
+    buyer_address1: str
+    buyer_address2: str
+    buyer_city: str
+    buyer_province_code: str
+    buyer_zip: str
+    buyer_country_code: str
+    shipment: str
+    link_label: str
+    products: list[OrderBody]
+
+
+@app.post("/flashship/order/create", tags=["FlashShip"])
+def create_order(body: OrderItem, mode: str):
+    api_key = body.api_key
+    if not api_key or api_key != API_KEY:
+        raise HTTPException(status_code=401, detail="Invalid API key")
+
+    if mode == "dev":
+        endpoint = DEV_ENDPOINT
+    elif mode == "prod":
+        endpoint = PROD_ENDPOINT
+    else:
+        raise HTTPException(status_code=400, detail="Invalid mode")
+
+    # Use the endpoint variable to construct the URL
+    url = f"{endpoint}/seller-api-v2/orders/shirt-add"
+    print("==>> url:", url)
+
+    try:
+        response = requests.post(
+            url=url,
+            json=body.model_dump(),
+            headers=get_flashship_header(auth=True, access_token=body.access_token),
+        )
+    except Exception as e:
+        logger.error("Error while creating order:", exc_info=True)
+        return JSONResponse(
+            content={"msg": "fail", "error": str(e)},
+            status_code=500,
+        )
+
+    status_code = response.status_code
 
     return JSONResponse(
         content=response.json(),
