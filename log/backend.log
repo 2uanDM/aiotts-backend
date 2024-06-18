@@ -10116,3 +10116,31 @@ AttributeError: 'OrderItem' object has no attribute 'access_token'
 2024-06-18 14:28:28,028 - uvicorn.error - INFO - Started server process [10520]
 2024-06-18 14:28:28,028 - uvicorn.error - INFO - Waiting for application startup.
 2024-06-18 14:28:28,028 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 15:12:27,967 - uvicorn.error - INFO - Shutting down
+2024-06-18 15:12:28,075 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 15:12:28,076 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 15:12:28,076 - uvicorn.error - INFO - Finished server process [10520]
+2024-06-18 15:12:30,195 - uvicorn.error - INFO - Started server process [28468]
+2024-06-18 15:12:30,196 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 15:12:30,196 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 15:12:35,910 - uvicorn.error - INFO - Shutting down
+2024-06-18 15:12:36,017 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 15:12:36,018 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 15:12:36,018 - uvicorn.error - INFO - Finished server process [28468]
+2024-06-18 15:12:37,443 - uvicorn.error - INFO - Started server process [32912]
+2024-06-18 15:12:37,443 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 15:12:37,444 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 15:13:55,545 - uvicorn.error - INFO - Shutting down
+2024-06-18 15:13:55,654 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 15:13:55,654 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 15:13:55,655 - uvicorn.error - INFO - Finished server process [32912]
+2024-06-18 15:16:25,148 - uvicorn.error - INFO - Started server process [22820]
+2024-06-18 15:16:25,149 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 15:16:25,149 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 15:17:08,844 - uvicorn.error - INFO - Shutting down
+2024-06-18 15:17:08,955 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 15:17:08,955 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 15:17:08,955 - uvicorn.error - INFO - Finished server process [22820]
+2024-06-18 15:17:10,374 - uvicorn.error - INFO - Started server process [6524]
+2024-06-18 15:17:10,375 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 15:17:10,375 - uvicorn.error - INFO - Application startup complete.

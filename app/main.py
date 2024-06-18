@@ -350,7 +350,7 @@ class LoginBody(BaseModel):
 
 
 @app.post("/flashship/login", tags=["FlashShip"])
-def login(body: LoginBody, mode: str):
+def login(body: LoginBody, mode: str = "dev"):
     api_key = body.api_key
     if not api_key or api_key != API_KEY:
         raise HTTPException(status_code=401, detail="Invalid API key")
@@ -429,7 +429,7 @@ class OrderItem(BaseModel):
 
 
 @app.post("/flashship/order/create", tags=["FlashShip"])
-def create_order(body: OrderItem, mode: str):
+def create_order(body: OrderItem, mode: str = "dev"):
     api_key = body.api_key
     if not api_key or api_key != API_KEY:
         raise HTTPException(status_code=401, detail="Invalid API key")
@@ -493,6 +493,49 @@ def get_order_detail(
         )
     except Exception as e:
         logger.error("Error while getting order details:", exc_info=True)
+        return JSONResponse(
+            content={"msg": "fail", "error": str(e)},
+            status_code=500,
+        )
+
+    status_code = response.status_code
+
+    return JSONResponse(
+        content=response.json(),
+        status_code=status_code,
+    )
+
+
+##### Cancel order #####
+class CancelOrderBody(BaseModel):
+    access_token: str
+    api_key: str
+    order_code_list: list[str]
+    reject_note: str
+
+
+@app.post("/flashship/order/cancel", tags=["FlashShip"])
+def cancel_order(body: CancelOrderBody, mode: str = "dev"):
+    api_key = body.api_key
+
+    if not api_key or api_key != API_KEY:
+        raise HTTPException(status_code=401, detail="Invalid API key")
+
+    if mode == "dev":
+        endpoint = DEV_ENDPOINT
+    else:
+        endpoint = PROD_ENDPOINT
+
+    url = f"{endpoint}/seller-api-v2/orders/seller-reject"
+
+    try:
+        response = requests.post(
+            url=url,
+            json=body.model_dump(),
+            headers=get_flashship_header(auth=True, access_token=body.access_token),
+        )
+    except Exception as e:
+        logger.error("Error while canceling order:", exc_info=True)
         return JSONResponse(
             content={"msg": "fail", "error": str(e)},
             status_code=500,
