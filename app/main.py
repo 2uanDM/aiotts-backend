@@ -464,3 +464,43 @@ def create_order(body: OrderItem, mode: str):
         content=response.json(),
         status_code=status_code,
     )
+
+
+##### Get orders details #####
+@app.get("/flashship/order/details", tags=["FlashShip"])
+def get_order_detail(
+    api_key: str,
+    access_token: str,
+    order_code: str,
+    mode: str = "dev",
+):
+    if not api_key or api_key != API_KEY:
+        return HTTPException(status_code=401, detail="Invalid API key")
+
+    if mode == "dev":
+        endpoint = DEV_ENDPOINT
+    else:
+        endpoint = PROD_ENDPOINT
+
+    url = f"{endpoint}/seller-api-v2/orders/{order_code}"
+
+    print("==>> url:", url)
+
+    try:
+        response = requests.get(
+            url=url,
+            headers=get_flashship_header(auth=True, access_token=access_token),
+        )
+    except Exception as e:
+        logger.error("Error while getting order details:", exc_info=True)
+        return JSONResponse(
+            content={"msg": "fail", "error": str(e)},
+            status_code=500,
+        )
+
+    status_code = response.status_code
+
+    return JSONResponse(
+        content=response.json(),
+        status_code=status_code,
+    )
