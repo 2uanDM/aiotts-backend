@@ -9058,3 +9058,516 @@ h11._util.LocalProtocolError: can't handle event type Response when role=SERVER 
 2024-04-22 04:29:08,870 - uvicorn.error - INFO - Waiting for application shutdown.
 2024-04-22 04:29:08,871 - uvicorn.error - INFO - Application shutdown complete.
 2024-04-22 04:29:08,871 - uvicorn.error - INFO - Finished server process [46278]
+2024-06-18 10:59:04,547 - uvicorn.error - INFO - Started server process [33488]
+2024-06-18 10:59:04,547 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 10:59:04,547 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 10:59:49,509 - uvicorn.error - INFO - Shutting down
+2024-06-18 10:59:49,618 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 10:59:49,618 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 10:59:49,618 - uvicorn.error - INFO - Finished server process [33488]
+2024-06-18 10:59:50,223 - uvicorn.error - INFO - Started server process [26556]
+2024-06-18 10:59:50,223 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 10:59:50,224 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:00:12,366 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:00:12,475 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:00:12,475 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:00:12,475 - uvicorn.error - INFO - Finished server process [26556]
+2024-06-18 11:00:13,163 - uvicorn.error - INFO - Started server process [23380]
+2024-06-18 11:00:13,163 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:00:13,163 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:00:13,391 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:00:13,500 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:00:13,500 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:00:13,500 - uvicorn.error - INFO - Finished server process [23380]
+2024-06-18 11:00:14,083 - uvicorn.error - INFO - Started server process [25800]
+2024-06-18 11:00:14,083 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:00:14,084 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:00:14,118 - uvicorn.error - ERROR - Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 741, in lifespan
+    await receive()
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+2024-06-18 11:00:14,618 - uvicorn.error - INFO - Started server process [11456]
+2024-06-18 11:00:14,618 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:00:14,618 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:00:32,782 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:00:32,892 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:00:32,892 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:00:32,892 - uvicorn.error - INFO - Finished server process [11456]
+2024-06-18 11:00:42,090 - uvicorn.error - INFO - Started server process [27844]
+2024-06-18 11:00:42,090 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:00:42,090 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:01:06,952 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:01:07,060 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:01:07,060 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:01:07,060 - uvicorn.error - INFO - Finished server process [27844]
+2024-06-18 11:01:07,721 - uvicorn.error - INFO - Started server process [34520]
+2024-06-18 11:01:07,722 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:01:07,722 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:01:17,627 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:01:17,737 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:01:17,737 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:01:17,737 - uvicorn.error - INFO - Finished server process [34520]
+2024-06-18 11:01:18,352 - uvicorn.error - INFO - Started server process [2772]
+2024-06-18 11:01:18,352 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:01:18,352 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:02:01,154 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:02:01,262 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:02:01,262 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:02:01,262 - uvicorn.error - INFO - Finished server process [2772]
+2024-06-18 11:02:01,934 - uvicorn.error - INFO - Started server process [29444]
+2024-06-18 11:02:01,935 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:02:01,935 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:02:02,491 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:02:02,601 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:02:02,601 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:02:02,601 - uvicorn.error - INFO - Finished server process [29444]
+2024-06-18 11:02:03,200 - uvicorn.error - INFO - Started server process [14056]
+2024-06-18 11:02:03,200 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:02:03,200 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:02:19,778 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:02:19,886 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:02:19,886 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:02:19,886 - uvicorn.error - INFO - Finished server process [14056]
+2024-06-18 11:02:20,459 - uvicorn.error - INFO - Started server process [16860]
+2024-06-18 11:02:20,459 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:02:20,459 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:02:24,717 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:02:24,825 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:02:24,825 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:02:24,825 - uvicorn.error - INFO - Finished server process [16860]
+2024-06-18 11:02:25,418 - uvicorn.error - INFO - Started server process [23356]
+2024-06-18 11:02:25,419 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:02:25,419 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:02:30,553 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:02:30,661 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:02:30,661 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:02:30,661 - uvicorn.error - INFO - Finished server process [23356]
+2024-06-18 11:02:31,240 - uvicorn.error - INFO - Started server process [20644]
+2024-06-18 11:02:31,241 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:02:31,241 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:06:03,110 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:06:03,220 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:06:03,220 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:06:03,220 - uvicorn.error - INFO - Finished server process [20644]
+2024-06-18 11:06:03,817 - uvicorn.error - INFO - Started server process [32524]
+2024-06-18 11:06:03,817 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:06:03,818 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:06:12,203 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:06:12,312 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:06:12,312 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:06:12,312 - uvicorn.error - INFO - Finished server process [32524]
+2024-06-18 11:06:12,930 - uvicorn.error - INFO - Started server process [13824]
+2024-06-18 11:06:12,930 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:06:12,930 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:06:36,166 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:06:36,275 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:06:36,275 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:06:36,275 - uvicorn.error - INFO - Finished server process [13824]
+2024-06-18 11:06:36,876 - uvicorn.error - INFO - Started server process [18776]
+2024-06-18 11:06:36,876 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:06:36,876 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:06:52,135 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:06:52,246 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:06:52,246 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:06:52,246 - uvicorn.error - INFO - Finished server process [18776]
+2024-06-18 11:06:52,894 - uvicorn.error - INFO - Started server process [11580]
+2024-06-18 11:06:52,894 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:06:52,895 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:07:12,828 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:07:12,937 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:07:12,937 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:07:12,938 - uvicorn.error - INFO - Finished server process [11580]
+2024-06-18 11:07:13,560 - uvicorn.error - INFO - Started server process [33740]
+2024-06-18 11:07:13,560 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:07:13,560 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:08:03,327 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:08:03,435 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:08:03,435 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:08:03,435 - uvicorn.error - INFO - Finished server process [33740]
+2024-06-18 11:08:04,095 - uvicorn.error - INFO - Started server process [22424]
+2024-06-18 11:08:04,095 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:08:04,095 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:08:10,853 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:08:10,960 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:08:10,960 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:08:10,960 - uvicorn.error - INFO - Finished server process [22424]
+2024-06-18 11:08:11,632 - uvicorn.error - INFO - Started server process [31340]
+2024-06-18 11:08:11,633 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:08:11,633 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:08:25,457 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:08:25,566 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:08:25,566 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:08:25,566 - uvicorn.error - INFO - Finished server process [31340]
+2024-06-18 11:08:26,114 - uvicorn.error - INFO - Started server process [33372]
+2024-06-18 11:08:26,114 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:08:26,114 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:09:13,393 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:09:13,503 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:09:13,503 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:09:13,503 - uvicorn.error - INFO - Finished server process [33372]
+2024-06-18 11:09:14,206 - uvicorn.error - INFO - Started server process [27388]
+2024-06-18 11:09:14,206 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:09:14,206 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:09:15,526 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:09:15,636 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:09:15,636 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:09:15,636 - uvicorn.error - INFO - Finished server process [27388]
+2024-06-18 11:09:18,220 - uvicorn.error - INFO - Started server process [12956]
+2024-06-18 11:09:18,221 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:09:18,221 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:09:56,302 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:09:56,412 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:09:56,412 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:09:56,412 - uvicorn.error - INFO - Finished server process [12956]
+2024-06-18 11:09:57,006 - uvicorn.error - INFO - Started server process [29976]
+2024-06-18 11:09:57,006 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:09:57,006 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:10:15,984 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:10:16,094 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:10:16,094 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:10:16,094 - uvicorn.error - INFO - Finished server process [29976]
+2024-06-18 11:10:16,689 - uvicorn.error - INFO - Started server process [13800]
+2024-06-18 11:10:16,690 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:10:16,690 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:10:23,559 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:10:23,669 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:10:23,669 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:10:23,669 - uvicorn.error - INFO - Finished server process [13800]
+2024-06-18 11:10:24,429 - uvicorn.error - INFO - Started server process [352]
+2024-06-18 11:10:24,430 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:10:24,430 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:10:50,689 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:10:50,797 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:10:50,797 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:10:50,797 - uvicorn.error - INFO - Finished server process [352]
+2024-06-18 11:10:51,342 - uvicorn.error - INFO - Started server process [33184]
+2024-06-18 11:10:51,342 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:10:51,342 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:11:05,537 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:11:05,645 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:11:05,645 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:11:05,645 - uvicorn.error - INFO - Finished server process [33184]
+2024-06-18 11:13:03,221 - uvicorn.error - INFO - Started server process [3984]
+2024-06-18 11:13:03,221 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:13:03,222 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:13:07,367 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:13:07,476 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:13:07,476 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:13:07,476 - uvicorn.error - INFO - Finished server process [3984]
+2024-06-18 11:13:17,087 - uvicorn.error - INFO - Started server process [10512]
+2024-06-18 11:13:17,087 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:13:17,088 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:15:00,152 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:15:00,259 - uvicorn.error - INFO - Waiting for connections to close. (CTRL+C to force quit)
+2024-06-18 11:15:08,797 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\connection.py", line 196, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\connection.py", line 615, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000001639C7A2ED0>, 'Connection to api.flashship.net timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.flashship.net', port=443): Max retries exceeded with url: /seller-api-v2/token (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001639C7A2ED0>, 'Connection to api.flashship.net timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 399, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 70, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\fastapi\routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\GitHub\aiotts-backend\app\main.py", line 367, in login
+    print("URL:", url)
+               ^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\requests\adapters.py", line 688, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.flashship.net', port=443): Max retries exceeded with url: /seller-api-v2/token (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001639C7A2ED0>, 'Connection to api.flashship.net timed out. (connect timeout=None)'))
+2024-06-18 11:15:08,844 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:15:08,844 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:15:08,844 - uvicorn.error - INFO - Finished server process [10512]
+2024-06-18 11:15:09,756 - uvicorn.error - INFO - Started server process [2832]
+2024-06-18 11:15:09,756 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:15:09,757 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:15:42,533 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:15:42,641 - uvicorn.error - INFO - Waiting for background tasks to complete. (CTRL+C to force quit)
+2024-06-18 11:15:57,841 - uvicorn.error - ERROR - Exception in ASGI application
+Traceback (most recent call last):
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\connection.py", line 196, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\connection.py", line 615, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\connection.py", line 205, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000001FFFE392A10>, 'Connection to api.flashship.net timed out. (connect timeout=None)')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\requests\adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.flashship.net', port=443): Max retries exceeded with url: /seller-api-v2/token (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001FFFE392A10>, 'Connection to api.flashship.net timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 399, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\uvicorn\middleware\proxy_headers.py", line 70, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\middleware\exceptions.py", line 65, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 756, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 776, in app
+    await route.handle(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 297, in handle
+    await self.app(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 77, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\routing.py", line 72, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\fastapi\routing.py", line 278, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\starlette\concurrency.py", line 42, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 2177, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\anyio\_backends\_asyncio.py", line 859, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\GitHub\aiotts-backend\app\main.py", line 369, in login
+    response = requests.post(
+               ^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\GitHub\aiotts-backend\.venv\Lib\site-packages\requests\adapters.py", line 688, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='api.flashship.net', port=443): Max retries exceeded with url: /seller-api-v2/token (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001FFFE392A10>, 'Connection to api.flashship.net timed out. (connect timeout=None)'))
+2024-06-18 11:15:57,861 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:15:57,861 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:15:57,861 - uvicorn.error - INFO - Finished server process [2832]
+2024-06-18 11:15:58,753 - uvicorn.error - INFO - Started server process [28760]
+2024-06-18 11:15:58,753 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:15:58,753 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:18:29,152 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:18:29,259 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:18:29,259 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:18:29,259 - uvicorn.error - INFO - Finished server process [28760]
+2024-06-18 11:18:30,123 - uvicorn.error - INFO - Started server process [22464]
+2024-06-18 11:18:30,123 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:18:30,123 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:19:01,454 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:19:01,565 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:19:01,565 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:19:01,565 - uvicorn.error - INFO - Finished server process [22464]
+2024-06-18 11:19:02,505 - uvicorn.error - INFO - Started server process [27696]
+2024-06-18 11:19:02,506 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:19:02,506 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:20:15,102 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:20:15,210 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:20:15,210 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:20:15,210 - uvicorn.error - INFO - Finished server process [27696]
+2024-06-18 11:20:16,046 - uvicorn.error - INFO - Started server process [24300]
+2024-06-18 11:20:16,046 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:20:16,046 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:20:58,674 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:20:58,781 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:20:58,781 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:20:58,781 - uvicorn.error - INFO - Finished server process [24300]
+2024-06-18 11:20:59,703 - uvicorn.error - INFO - Started server process [30964]
+2024-06-18 11:20:59,703 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:20:59,703 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 11:21:04,620 - uvicorn.error - INFO - Shutting down
+2024-06-18 11:21:04,728 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 11:21:04,728 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 11:21:04,728 - uvicorn.error - INFO - Finished server process [30964]
+2024-06-18 11:21:05,633 - uvicorn.error - INFO - Started server process [26728]
+2024-06-18 11:21:05,633 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-18 11:21:05,634 - uvicorn.error - INFO - Application startup complete.
