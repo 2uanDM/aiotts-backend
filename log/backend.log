@@ -10144,3 +10144,10 @@ AttributeError: 'OrderItem' object has no attribute 'access_token'
 2024-06-18 15:17:10,374 - uvicorn.error - INFO - Started server process [6524]
 2024-06-18 15:17:10,375 - uvicorn.error - INFO - Waiting for application startup.
 2024-06-18 15:17:10,375 - uvicorn.error - INFO - Application startup complete.
+2024-06-18 17:54:15,883 - uvicorn.error - INFO - Shutting down
+2024-06-18 17:54:15,999 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-18 17:54:16,002 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-18 17:54:16,003 - uvicorn.error - INFO - Finished server process [6524]
+2024-06-21 09:21:54,317 - uvicorn.error - INFO - Started server process [30076]
+2024-06-21 09:21:54,319 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-21 09:21:54,319 - uvicorn.error - INFO - Application startup complete.
