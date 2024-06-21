@@ -3,11 +3,12 @@ FROM python:3.11-slim
 # Set the working directory
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app
-COPY . /app
-
-# Install Python dependencies
+# Install Python dependencies (Since docker will check for changes in the requirements.txt file, it will only install the dependencies if there are any changes)
+COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the current directory contents into the container at /app
+COPY . .
 
 # Make port 8000 available to the world outside this container
 EXPOSE 1234
