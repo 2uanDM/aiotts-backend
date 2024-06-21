@@ -152,8 +152,8 @@ async def create_upload_file(file: UploadFile = File(...)):
 
 
 @app.get("/aiotts/installer", tags=["AIO TTS"])
-def download_installer():
-    file_path = Path("./uploads/AIO TikTokShop V2.rar")
+def download_installer(file_name: str):
+    file_path = Path(f"./uploads/{file_name}")
 
     # Print the file path as the logger and return the file
     logger.info(f"Requested file path: {file_path}")
