@@ -160,14 +160,12 @@ def download_installer(file_name: str):
 
     if not file_path.exists():
         logger.error(f"File not found: {file_path}")
-        raise HTTPException(
-            status_code=404, detail="File AIO TikTokShop V2.rar not found"
-        )
+        raise HTTPException(status_code=404, detail=f"File {file_name} not found")
 
     return FileResponse(
         file_path,
         media_type="application/octet-stream",
-        filename="AIO TikTokShop V2.rar",
+        filename=file_name,
     )
 
 
