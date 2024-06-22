@@ -10495,3 +10495,7 @@ asyncio.exceptions.CancelledError
 2024-06-22 16:31:21,061 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
 2024-06-22 16:31:23 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
 2024-06-22 16:31:23,084 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:48:33,863 - uvicorn.error - INFO - Shutting down
+2024-06-22 16:48:33,969 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-22 16:48:33,969 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-22 16:48:33,969 - uvicorn.error - INFO - Finished server process [25804]
