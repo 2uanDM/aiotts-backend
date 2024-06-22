@@ -10151,3 +10151,173 @@ AttributeError: 'OrderItem' object has no attribute 'access_token'
 2024-06-21 09:21:54,317 - uvicorn.error - INFO - Started server process [30076]
 2024-06-21 09:21:54,319 - uvicorn.error - INFO - Waiting for application startup.
 2024-06-21 09:21:54,319 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:08:46,100 - uvicorn.error - INFO - Started server process [15840]
+2024-06-22 16:08:46,101 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:08:46,101 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:08:57,961 - uvicorn.error - INFO - Shutting down
+2024-06-22 16:08:58,101 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-22 16:08:58,101 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-22 16:08:58,101 - uvicorn.error - INFO - Finished server process [15840]
+2024-06-22 16:09:08,711 - uvicorn.error - INFO - Started server process [3192]
+2024-06-22 16:09:08,711 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:09:08,712 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:09:35 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:09:35,763 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:09:45 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:09:45,282 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:09:45,407 - app.main - ERROR - Error occurred: the JSON object must be str, bytes or bytearray, not dict
+Traceback (most recent call last):
+  File "D:\GitHub\AIO-TikTokShop-Backend\app\main.py", line 345, in _search_label_info
+    "data": json.loads(result[0]),
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\json\__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not dict
+2024-06-22 16:10:37,317 - uvicorn.error - INFO - Shutting down
+2024-06-22 16:10:37,426 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-22 16:10:37,426 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-22 16:10:37,426 - uvicorn.error - INFO - Finished server process [3192]
+2024-06-22 16:10:38,967 - uvicorn.error - INFO - Started server process [22216]
+2024-06-22 16:10:38,967 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:10:38,967 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:10:41,193 - uvicorn.error - INFO - Shutting down
+2024-06-22 16:10:41,303 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-22 16:10:41,303 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-22 16:10:41,303 - uvicorn.error - INFO - Finished server process [22216]
+2024-06-22 16:10:42,794 - uvicorn.error - INFO - Started server process [21068]
+2024-06-22 16:10:42,794 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:10:42,795 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:10:44 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:10:44,455 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:10:54,323 - uvicorn.error - INFO - Shutting down
+2024-06-22 16:10:54,436 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-22 16:10:54,436 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-22 16:10:54,436 - uvicorn.error - INFO - Finished server process [21068]
+2024-06-22 16:10:55,899 - uvicorn.error - INFO - Started server process [32620]
+2024-06-22 16:10:55,899 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:10:55,899 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:10:58 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:10:58,734 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:11:10,021 - uvicorn.error - INFO - Shutting down
+2024-06-22 16:11:10,130 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-22 16:11:10,130 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-22 16:11:10,130 - uvicorn.error - INFO - Finished server process [32620]
+2024-06-22 16:11:11,622 - uvicorn.error - INFO - Started server process [21764]
+2024-06-22 16:11:11,622 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:11:11,622 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:11:14,709 - uvicorn.error - INFO - Shutting down
+2024-06-22 16:11:14,818 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-22 16:11:14,818 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-22 16:11:14,820 - uvicorn.error - INFO - Finished server process [21764]
+2024-06-22 16:11:16,352 - uvicorn.error - INFO - Started server process [23092]
+2024-06-22 16:11:16,353 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:11:16,353 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:11:16,416 - uvicorn.error - ERROR - Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GitHub\AIO-TikTokShop-Backend\.venv\Lib\site-packages\starlette\routing.py", line 741, in lifespan
+    await receive()
+  File "D:\GitHub\AIO-TikTokShop-Backend\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+2024-06-22 16:11:17,425 - uvicorn.error - INFO - Started server process [32152]
+2024-06-22 16:11:17,425 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:11:17,425 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:11:19,522 - uvicorn.error - INFO - Shutting down
+2024-06-22 16:11:19,633 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-22 16:11:19,635 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-22 16:11:19,635 - uvicorn.error - INFO - Finished server process [32152]
+2024-06-22 16:11:20,931 - uvicorn.error - INFO - Started server process [30956]
+2024-06-22 16:11:20,931 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:11:20,931 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:11:20,962 - uvicorn.error - ERROR - Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GitHub\AIO-TikTokShop-Backend\.venv\Lib\site-packages\starlette\routing.py", line 741, in lifespan
+    await receive()
+  File "D:\GitHub\AIO-TikTokShop-Backend\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+2024-06-22 16:11:22,091 - uvicorn.error - INFO - Started server process [2100]
+2024-06-22 16:11:22,091 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:11:22,092 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:11:22,116 - uvicorn.error - ERROR - Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GitHub\AIO-TikTokShop-Backend\.venv\Lib\site-packages\starlette\routing.py", line 741, in lifespan
+    await receive()
+  File "D:\GitHub\AIO-TikTokShop-Backend\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+2024-06-22 16:11:23,192 - uvicorn.error - INFO - Started server process [2096]
+2024-06-22 16:11:23,192 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:11:23,193 - uvicorn.error - INFO - Application startup complete.
