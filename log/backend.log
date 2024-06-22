@@ -10321,3 +10321,177 @@ asyncio.exceptions.CancelledError
 2024-06-22 16:11:23,192 - uvicorn.error - INFO - Started server process [2096]
 2024-06-22 16:11:23,192 - uvicorn.error - INFO - Waiting for application startup.
 2024-06-22 16:11:23,193 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:12:11 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:12:11,420 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:12:17 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:12:17,997 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:15:05 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:15:05,222 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:16:03 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:16:03,270 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:16:09 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:16:09,940 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:16:21 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:16:21,121 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:22:25 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:22:25,217 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:22:29 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:22:29,503 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:25:40 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:25:40,872 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:26:25 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:26:25,792 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:26:27 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:26:27,534 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:26:28 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:26:28,857 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:26:30 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:26:30,269 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:26:52 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:26:52,993 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:27:58,283 - uvicorn.error - INFO - Shutting down
+2024-06-22 16:27:58,392 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-22 16:27:58,392 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-22 16:27:58,392 - uvicorn.error - INFO - Finished server process [2096]
+2024-06-22 16:27:59,439 - uvicorn.error - INFO - Started server process [32452]
+2024-06-22 16:27:59,440 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:27:59,440 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:28:02,511 - uvicorn.error - INFO - Shutting down
+2024-06-22 16:28:02,620 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-22 16:28:02,620 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-22 16:28:02,620 - uvicorn.error - INFO - Finished server process [32452]
+2024-06-22 16:28:03,622 - uvicorn.error - INFO - Started server process [31488]
+2024-06-22 16:28:03,622 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:28:03,622 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:28:04,733 - uvicorn.error - INFO - Shutting down
+2024-06-22 16:28:04,842 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-22 16:28:04,842 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-22 16:28:04,842 - uvicorn.error - INFO - Finished server process [31488]
+2024-06-22 16:28:05,779 - uvicorn.error - INFO - Started server process [33340]
+2024-06-22 16:28:05,780 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:28:05,780 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:28:06,990 - uvicorn.error - INFO - Shutting down
+2024-06-22 16:28:07,099 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-22 16:28:07,099 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-22 16:28:07,099 - uvicorn.error - INFO - Finished server process [33340]
+2024-06-22 16:28:08,035 - uvicorn.error - INFO - Started server process [32176]
+2024-06-22 16:28:08,035 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:28:08,035 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:28:09,815 - uvicorn.error - INFO - Shutting down
+2024-06-22 16:28:09,923 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-22 16:28:09,923 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-22 16:28:09,923 - uvicorn.error - INFO - Finished server process [32176]
+2024-06-22 16:28:10,867 - uvicorn.error - INFO - Started server process [18440]
+2024-06-22 16:28:10,867 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:28:10,867 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:28:12,082 - uvicorn.error - INFO - Shutting down
+2024-06-22 16:28:12,190 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-22 16:28:12,190 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-22 16:28:12,190 - uvicorn.error - INFO - Finished server process [18440]
+2024-06-22 16:28:13,109 - uvicorn.error - INFO - Started server process [11620]
+2024-06-22 16:28:13,109 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:28:13,109 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:28:14,322 - uvicorn.error - INFO - Shutting down
+2024-06-22 16:28:14,431 - uvicorn.error - INFO - Waiting for application shutdown.
+2024-06-22 16:28:14,431 - uvicorn.error - INFO - Application shutdown complete.
+2024-06-22 16:28:14,431 - uvicorn.error - INFO - Finished server process [11620]
+2024-06-22 16:28:15,323 - uvicorn.error - INFO - Started server process [28080]
+2024-06-22 16:28:15,324 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:28:15,324 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:28:15,344 - uvicorn.error - ERROR - Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GitHub\AIO-TikTokShop-Backend\.venv\Lib\site-packages\starlette\routing.py", line 741, in lifespan
+    await receive()
+  File "D:\GitHub\AIO-TikTokShop-Backend\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+2024-06-22 16:28:16,239 - uvicorn.error - INFO - Started server process [27284]
+2024-06-22 16:28:16,240 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:28:16,240 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:28:16,258 - uvicorn.error - ERROR - Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\base_events.py", line 653, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\runners.py", line 123, in run
+    raise KeyboardInterrupt()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\GitHub\AIO-TikTokShop-Backend\.venv\Lib\site-packages\starlette\routing.py", line 741, in lifespan
+    await receive()
+  File "D:\GitHub\AIO-TikTokShop-Backend\.venv\Lib\site-packages\uvicorn\lifespan\on.py", line 137, in receive
+    return await self.receive_queue.get()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\asyncio\queues.py", line 158, in get
+    await getter
+asyncio.exceptions.CancelledError
+
+2024-06-22 16:28:21,193 - uvicorn.error - INFO - Started server process [25804]
+2024-06-22 16:28:21,193 - uvicorn.error - INFO - Waiting for application startup.
+2024-06-22 16:28:21,193 - uvicorn.error - INFO - Application startup complete.
+2024-06-22 16:28:27 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - :\GitHub\AIO-TikTokShop-Backend\app\utils\database.py:39)
+2024-06-22 16:30:54 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:30:54,740 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:31:00 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:31:00,004 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:31:01 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:31:01,510 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:31:03 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:31:03,054 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:31:04 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:31:04,339 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:31:05 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:31:05,596 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:31:07 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:31:07,149 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:31:08 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:31:08,487 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:31:09 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:31:09,813 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:31:16 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:31:16,878 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:31:18 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:31:18,396 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:31:19 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:31:19,572 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:31:21 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:31:21,061 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
+2024-06-22 16:31:23 [    INFO] Connected to Postgres with host: aiotts.folinas.com (src.database - \app\utils\database.py:39)
+2024-06-22 16:31:23,084 - src.database - INFO - Connected to Postgres with host: aiotts.folinas.com
