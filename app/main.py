@@ -3,12 +3,12 @@ import logging
 import os
 from pathlib import Path
 
-import requests
 from dotenv import load_dotenv
 from fastapi import FastAPI, File, HTTPException, UploadFile
-from fastapi.responses import FileResponse, JSONResponse
+from fastapi.responses import FileResponse
 from pydantic import BaseModel
-from app.utils.database import server_connection
+
+from app.api.main import api_router
 
 load_dotenv(override=True)
 
@@ -20,16 +20,24 @@ def configure_logging():
     LOGGING_FORMAT = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
     LOG_FILE_PATH = "./log/backend.log"  # Specify the log file path
 
-    logging.basicConfig(
-        level=logging.INFO, format=LOGGING_FORMAT, filename=LOG_FILE_PATH
-    )
+    # StreamHandler to print the logs to the console
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.INFO)
+    console_handler.setFormatter(logging.Formatter(LOGGING_FORMAT))
+
+    # FileHandler to write logs to a file
+    file_handler = logging.FileHandler(LOG_FILE_PATH)
+    file_handler.setLevel(logging.INFO)
+    file_handler.setFormatter(logging.Formatter(LOGGING_FORMAT))
+
+    # Add both handlers to the root logger
+    logging.getLogger().addHandler(console_handler)
+    logging.getLogger().addHandler(file_handler)
+
     logging.getLogger("uvicorn").handlers = logging.getLogger().handlers
 
 
-# Call the function to configure the logging
 configure_logging()
-
-# Create a logger
 logger = logging.getLogger(__name__)
 
 
@@ -207,172 +215,4 @@ def modify_update_info_base(update_info: UpdateInfo):
     return {"message": "Update info modified successfully"}
 
 
-"""Auto PTS"""
-
-
-@app.get("/autopts/update/info", tags=["Auto PTS"])
-async def check_for_update():
-    with open("./update/autopts/update_info.json", "r", encoding="utf-8") as f:
-        update_info = json.load(f)
-
-    return update_info
-
-
-@app.get("/autopts/update/download/data", tags=["Auto PTS"])
-async def download_update_zip(version: str):
-    file_path = Path(f"./update/autopts/data/v{version}/main.zip")
-
-    # Print the file path as the logger and return the file
-    logger.info(f"Requested file path: {file_path}, Version: {version}")
-
-    if not file_path.exists():
-        logger.error(f"File not found: {file_path}")
-        raise HTTPException(
-            status_code=404, detail=f"File v{version}/main.zip not found"
-        )
-
-    return FileResponse(file_path)
-
-
-@app.get("/autopts/update/download/metadata", tags=["Auto PTS"])
-async def download_update_metadata(version: str):
-    file_path = Path(f"./update/autopts/data/v{version}/metadata.json")
-
-    # Print the file path as the logger and return the file
-    logger.info(f"Requested file path: {file_path}, Version: {version}")
-
-    if not file_path.exists():
-        logger.error(f"File not found: {file_path}")
-        raise HTTPException(
-            status_code=404, detail=f"File v{version}/metadata.json not found"
-        )
-
-    return {
-        "status": "success",
-        "message": "File loaded successfully",
-        "data": json.load(file_path.open("r", encoding="utf-8")),
-    }
-
-
-@app.post("/autopts/update/upload", tags=["Auto PTS"])
-async def upload_update(
-    version: str,
-    metadata_file: UploadFile = File(...),
-    package_file: UploadFile = File(...),
-):
-    file_extension = package_file.filename.split(".")[-1]
-    if file_extension != "zip":
-        raise HTTPException(
-            status_code=400, detail="Only zip files are allowed for package"
-        )
-
-    file_extension = metadata_file.filename.split(".")[-1]
-    if file_extension != "json":
-        raise HTTPException(
-            status_code=400, detail="Only json files are allowed for metadata"
-        )
-
-    os.makedirs(f"./update/autopts/data/v{version}", exist_ok=True)
-
-    # Save the file to the specified path
-    try:
-        file_path = Path(f"./update/autopts/data/v{version}/main.zip")
-        with file_path.open("wb") as buffer:
-            buffer.write(await package_file.read())
-    except Exception as e:
-        raise HTTPException(
-            status_code=500, detail=f"Error while saving the file: {str(e)}"
-        )
-
-    # Update the metadata
-    try:
-        metadata_file_path = Path(f"./update/autopts/data/v{version}/metadata.json")
-        metadata = json.loads(metadata_file.file.read())
-        with metadata_file_path.open("w", encoding="utf-8") as f:
-            json.dump(metadata, f, ensure_ascii=False, indent=4)
-    except Exception as e:
-        raise HTTPException(
-            status_code=500, detail=f"Error while updating the metadata: {str(e)}"
-        )
-
-    return {
-        "status": "success",
-        "message": "File uploaded successfully",
-        "filename": package_file.filename,
-        "version": version,
-    }
-
-
-@app.post("/autopts/update/modify", tags=["Auto PTS"])
-def modify_update_info_base(update_info: UpdateInfo):
-    file_path = Path("./update/autopts/update_info.json")
-
-    with open(file_path, "w", encoding="utf-8") as f:
-        json.dump(update_info.dict(), f, ensure_ascii=False, indent=4)
-
-    return {"message": "Update info modified successfully"}
-
-
-
-############################################################################################################
-
-@server_connection
-def _search_label_info(tracking_id: str | None, conn=None) -> dict:
-    try:
-        if conn is None:
-            return {
-                "status": "internal_error",
-                "message": "Connection to the database failed",
-            }
-        
-        cur = conn.cursor()
-        query = """
-            SELECT scanned_info FROM label_info
-            WHERE tracking_id = %s;
-        """
-        
-        cur.execute(query, (tracking_id,))
-        result = cur.fetchone()
-        
-        if result is None:
-            return {
-                "status": "not_found",
-                "message": "Tracking ID not found",
-            }
-        else:
-            return {
-                "status": "success",
-                "data": result[0],
-            }
-    except Exception as e:
-        logger.error(f"Error occurred: {str(e)}", exc_info=True)
-        return {
-            "status": "internal_error",
-            "message": f"An error occurred while processing the request: {str(e)}",
-        }
-    
-    
-
-@app.get("/aiotts/label", tags=["AIO TTS REST API"])
-def search_label(
-    tracking_id: str,
-    api_key: str,
-):
-    if api_key != API_KEY:
-        raise HTTPException(
-            status_code=401, detail="Invalid API Key"
-        )
-    if not isinstance(tracking_id, str):
-        raise HTTPException(
-            status_code=400, detail="Tracking ID must be a string"
-        )
-    
-    result = _search_label_info(tracking_id)
-    
-    if result["status"] == "success":
-        return JSONResponse(content=result)
-    elif result["status"] == "not_found":
-        raise HTTPException(status_code=404, detail="Tracking ID not found")
-    else:
-        raise HTTPException(status_code=500, detail=result["message"])
-        
+app.include_router(api_router)
