@@ -8,7 +8,7 @@ from fastapi import FastAPI, File, HTTPException, UploadFile
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
 
-from app.api.main import api_router
+from app.api import api_router
 
 load_dotenv(override=True)
 
@@ -41,7 +41,7 @@ configure_logging()
 logger = logging.getLogger(__name__)
 
 
-@app.get("/aiotts/update/info", tags=["AIO TTS"])
+@app.get("/aiotts/update/info", tags=["Update AIOTTS"])
 async def check_for_update():
     with open("./update/aiotts/update_info.json", "r", encoding="utf-8") as f:
         update_info = json.load(f)
@@ -49,7 +49,7 @@ async def check_for_update():
     return update_info
 
 
-@app.get("/aiotts/update/download/data", tags=["AIO TTS"])
+@app.get("/aiotts/update/download/data", tags=["Update AIOTTS"])
 async def download_update_zip(version: str):
     file_path = Path(f"./update/aiotts/data/v{version}/main.zip")
 
@@ -65,7 +65,7 @@ async def download_update_zip(version: str):
     return FileResponse(file_path)
 
 
-@app.get("/aiotts/update/download/metadata", tags=["AIO TTS"])
+@app.get("/aiotts/update/download/metadata", tags=["Update AIOTTS"])
 async def download_update_metadata(version: str):
     file_path = Path(f"./update/aiotts/data/v{version}/metadata.json")
 
@@ -85,7 +85,7 @@ async def download_update_metadata(version: str):
     }
 
 
-@app.post("/aiotts/update/upload", tags=["AIO TTS"])
+@app.post("/aiotts/update/upload", tags=["Update AIOTTS"])
 async def upload_update(
     version: str,
     metadata_file: UploadFile = File(...),
@@ -134,7 +134,7 @@ async def upload_update(
     }
 
 
-@app.post("/uploadfile/", tags=["AIO TTS"])
+@app.post("/uploadfile/", tags=["Update AIOTTS"])
 async def create_upload_file(file: UploadFile = File(...)):
     save_path = os.path.join(os.getcwd(), "uploads", file.filename)
 
@@ -160,7 +160,7 @@ async def create_upload_file(file: UploadFile = File(...)):
     return {"filename": file.filename}
 
 
-@app.get("/aiotts/installer", tags=["AIO TTS"])
+@app.get("/aiotts/installer", tags=["Update AIOTTS"])
 def download_installer(file_name: str):
     file_path = Path(f"./uploads/{file_name}")
 
@@ -178,7 +178,7 @@ def download_installer(file_name: str):
     )
 
 
-@app.get("/aiotts/dependencies/ocr", tags=["AIO TTS"])
+@app.get("/aiotts/dependencies/ocr", tags=["Update AIOTTS"])
 def download_ocr_dependencies():
     file_path = Path("./dependencies/Tesseract-OCR-Setup.exe")
 
@@ -205,7 +205,7 @@ class UpdateInfo(BaseModel):
     detail: str
 
 
-@app.post("/aiotts/update/modify", tags=["AIO TTS"])
+@app.post("/aiotts/update/modify", tags=["Update AIOTTS"])
 def modify_update_info_base(update_info: UpdateInfo):
     file_path = Path("./update/aiotts/update_info.json")
 
@@ -214,5 +214,7 @@ def modify_update_info_base(update_info: UpdateInfo):
 
     return {"message": "Update info modified successfully"}
 
+
+# Another APIs
 
 app.include_router(api_router)

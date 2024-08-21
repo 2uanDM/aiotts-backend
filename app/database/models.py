@@ -1,6 +1,6 @@
 from sqlalchemy import JSON, Boolean, Column, DateTime, Integer, String
 
-from .init import Base
+from . import Base
 
 
 class LabelInfo(Base):

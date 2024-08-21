@@ -12,7 +12,7 @@ class RelativePathFilter(logging.Filter):
         return True
 
 
-def setup_logging(logger, is_root=False, level=logging.INFO):
+def setup_logger(logger, is_root=False, level=logging.INFO):
     # Set up the log formatter
     msg_format = (
         "%(asctime)s [%(levelname)8s] %(message)s (%(name)s - %(pathname)s:%(lineno)d)"

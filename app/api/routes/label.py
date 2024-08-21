@@ -3,19 +3,10 @@ from sqlalchemy.orm import Session
 from starlette.responses import JSONResponse
 
 from app.database.crud import get_label_info
-from app.database.init import SessionLocal
 from app.database.models import LabelInfo
+from app.utils import get_db
 
 router = APIRouter()
-
-
-# Dependency
-def get_db():
-    db = SessionLocal()
-    try:
-        yield db
-    finally:
-        db.close()
 
 
 @router.get("/search/{tracking_id}")

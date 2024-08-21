@@ -3,3 +3,16 @@ fastapi
 python-multipart
 requests
 psycopg2-binary
+google-api-core==2.17.1
+google-api-python-client==2.118.0
+google-auth==2.27.0
+google-auth-httplib2==0.2.0
+google-auth-oauthlib==1.0.0
+google_spreadsheet==0.0.6
+googleapis-common-protos==1.62.0
+gspread==5.10.0
+oauth2client==4.1.3
+oauthlib==3.2.2
+pandas
+polars
+pyarrow
