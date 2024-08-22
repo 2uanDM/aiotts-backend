@@ -7,3 +7,7 @@
 *__pycache__/
 log/backend.log
 .vscode
+
+
+# All pycache files
+__pycache__/
