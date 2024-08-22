@@ -21,7 +21,6 @@ def check_uuid(
     db: Session = Depends(get_db),
     api_key: str = Query(default=""),
 ):
-    # Raise 401 if the API key is invalid
     validate_apikey(api_key)
 
     uuid: models.UUID = get_uuid(value, db)
@@ -41,7 +40,6 @@ def check_uuid(
 def check_password_status(
     email: str, api_key: str = Query(default=""), db: Session = Depends(get_db)
 ):
-    # Raise 401 if the API key is invalid
     validate_apikey(api_key)
 
     personnel: models.Personnel = get_password_status(email, db)
@@ -65,7 +63,6 @@ def check_password_status(
 
 @router.get("/search/login-expired-day", tags=["Authentication"])
 def check_login_expired_day(api_key: str = Query(default="")):
-    # Raise 401 if the API key is invalid
     validate_apikey(api_key)
 
     expired_days: str = os.getenv("LOGIN_EXPIRED_DAYS")
@@ -80,7 +77,6 @@ def check_login_expired_day(api_key: str = Query(default="")):
 
 @router.get("/settings/telegram", tags=["Authentication"])
 def get_telegram_settings(api_key: str = Query(default="")):
-    # Raise 401 if the API key is invalid
     validate_apikey(api_key)
 
     telegram_bot_token: str = os.getenv("TELEGRAM_BOT_TOKEN")

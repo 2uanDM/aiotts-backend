@@ -9,11 +9,14 @@ from typing import List
 import gspread
 import pandas as pd
 import polars as pl
+from dotenv import load_dotenv
 from fastapi import APIRouter, Response
 from oauth2client.service_account import ServiceAccountCredentials
 
 from app.api.schema.google_sheet import SKUSToInsert
-from app.utils import const, setup_logger, validate_apikey
+from app.utils import setup_logger, validate_apikey
+
+load_dotenv(override=True)
 
 logger = logging.getLogger(__name__)
 setup_logger(logger)
@@ -51,7 +54,9 @@ class GoogleSheetWorker:
         # Get the path to the secret file
         with tempfile.TemporaryDirectory() as tmpdirname:
             with open(os.path.join(tmpdirname, "sheet_secret_key.json"), "w") as f:
-                json.dump(const.SHEET_SECRET_KEY, f, indent=4, ensure_ascii=False)
+                json.dump(
+                    os.getenv("SHEET_SECRET_KEY"), f, indent=4, ensure_ascii=False
+                )
 
             # Get the credentials
             self.creds = ServiceAccountCredentials.from_json_keyfile_name(
@@ -314,7 +319,6 @@ router = APIRouter()
 
 @router.get("/design/read")
 def read_google_sheet(workbook_name: str, sheet_name: str, api_key: str = ""):
-    # Raise 401 if the API key is invalid
     validate_apikey(api_key)
 
     sheet_worker = GoogleSheetWorker(workbook_name)
@@ -339,7 +343,6 @@ def read_google_sheet(workbook_name: str, sheet_name: str, api_key: str = ""):
 def search_design_by_sku_id(
     body: List[str], workbook_name: str, sheet_name: str, api_key: str = ""
 ):
-    # Raise 401 if the API key is invalid
     validate_apikey(api_key)
 
     sheet_worker = GoogleSheetWorker(workbook_name)
@@ -387,7 +390,6 @@ def insert_new_sku_ids(
     seller_name: str,
     api_key: str = "",
 ):
-    # Raise 401 if the API key is invalid
     validate_apikey(api_key)
 
     sheet_worker = GoogleSheetWorker(workbook_name)
@@ -433,7 +435,6 @@ def insert_new_sku_ids(
 def move_designs_to_last_row(
     body: List[str], workbook_name: str, sheet_name: str, api_key: str = ""
 ):
-    # Raise 401 if the API key is invalid
     validate_apikey(api_key)
 
     sheet_worker = GoogleSheetWorker(workbook_name)
