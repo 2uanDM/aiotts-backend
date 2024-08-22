@@ -16,3 +16,5 @@ oauthlib==3.2.2
 pandas
 polars
 pyarrow
+python-dotenv
+sqlalchemy
