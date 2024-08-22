@@ -4,14 +4,6 @@ import os
 os.makedirs("log", exist_ok=True)
 
 
-class RelativePathFilter(logging.Filter):
-    def filter(self, record):
-        record.pathname = os.path.realpath(record.pathname).replace(os.getcwd(), ".")[
-            1:
-        ]
-        return True
-
-
 def setup_logger(logger, is_root=False, level=logging.INFO):
     # Set up the log formatter
     msg_format = (
@@ -23,13 +15,11 @@ def setup_logger(logger, is_root=False, level=logging.INFO):
     # File Handler
     file_handler = logging.FileHandler("log/backend.log", encoding="utf-8")
     file_handler.setFormatter(formatter)
-    file_handler.addFilter(RelativePathFilter())
     logger.addHandler(file_handler)
 
     # Stream Handler
     stream_handler = logging.StreamHandler()
     stream_handler.setFormatter(formatter)
-    stream_handler.addFilter(RelativePathFilter())
     logger.addHandler(stream_handler)
 
     if is_root:
