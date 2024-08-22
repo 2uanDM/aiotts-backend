@@ -4,7 +4,6 @@
 *.zip
 .env
 *.pyc
-*__pycache__/
 log/backend.log
 .vscode
 

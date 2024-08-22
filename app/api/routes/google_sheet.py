@@ -441,7 +441,7 @@ def move_designs_to_last_row(
     logger.info(f"Start deleting rows: {body}")
 
     result = sheet_worker.delete_rows(sheet_name, body)
-    print(f"==>> result: {result}")
+    # print(f"==>> result: {result}")
 
     if result["status"] == "error":
         return Response(
