@@ -55,7 +55,10 @@ class GoogleSheetWorker:
         with tempfile.TemporaryDirectory() as tmpdirname:
             with open(os.path.join(tmpdirname, "sheet_secret_key.json"), "w") as f:
                 json.dump(
-                    os.getenv("SHEET_SECRET_KEY"), f, indent=4, ensure_ascii=False
+                    json.loads(os.getenv("SHEET_SECRET_KEY")),
+                    f,
+                    indent=4,
+                    ensure_ascii=False,
                 )
 
             # Get the credentials
