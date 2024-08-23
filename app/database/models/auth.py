@@ -1,13 +1,6 @@
-from sqlalchemy import JSON, Boolean, Column, DateTime, Integer, String
+from sqlalchemy import Boolean, Column, DateTime, Integer, String
 
-from . import Base
-
-
-class LabelInfo(Base):
-    __tablename__ = "label_info"
-
-    tracking_id = Column(String, unique=True, primary_key=True, index=True)
-    scanned_info = Column(JSON)
+from .. import Base
 
 
 class UUID(Base):
